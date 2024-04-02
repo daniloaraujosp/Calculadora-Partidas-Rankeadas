@@ -1,47 +1,47 @@
-console.log("Seja bem-vindo(a) ao Desafio Nível de Herói.")
+console.log("Seja bem-vindo(a) ao Desafio Calculadora de Partidas Rankeadas.")
 console.log("Identificando usuário...")
 
 let nomeUsuario = "Danilo"
 
-console.log("Olá, " + nomeUsuario + "! Vamos ver em qual nível você esta? ")
+let vitorias = 25
+let derrotas = 5
+let partidas = vitorias + derrotas
+let saldoVitorias = subtracao(vitorias,derrotas)
 
-let estrelas = 100;
-let nivel = "nível"
+function subtracao(vitorias,derrotas){
+    let resultado = vitorias - derrotas
+    return resultado
+}
+
+console.log("Olá, " + nomeUsuario + "! Vamos ver em qual nível você está? ")
+console.log("Você tem " + partidas + " partidas realizadas." )
 
 
-if (estrelas <= 1000) {
+if (vitorias <= 10) {
     nivel = "Ferro"
 } 
 
-else if (estrelas >= 1001 && estrelas <= 2000) {
+else if (vitorias >= 11 && vitorias <= 20) {
     nivel = "Bronze"
 } 
 
-else if (estrelas >= 2001 && estrelas <= 5000) {
+else if (vitorias >= 21 && vitorias <= 50) {
     nivel = "Prata"
-}
+} 
 
-else if (estrelas >= 5001 && estrelas <= 7000) {
+else if (vitorias >= 51 && vitorias <= 80) {
     nivel = "Ouro"
-}
+} 
 
-else if (estrelas >= 7001 && estrelas <= 8000) {
-    nivel = "Platina"
-}
+else if (vitorias >= 81 && vitorias <= 90) {
+    nivel = "Diamante"
+} 
 
-else if (estrelas >= 8001 && estrelas <= 9000) {
-    nivel = "Ascendente"
-}
-
-else if (estrelas >= 9001 && estrelas <= 10000) {
+else if (vitoria >= 101) {
     nivel = "Imortal"
 }
 
-else if (estrelas >= 10001) {
-    nivel = "Radiante"
-}
-
-console.log(nomeUsuario + ", você tem " + estrelas + " estrelas e está no nível " + nivel + ".")
+console.log("O Herói " + nomeUsuario + " tem o saldo de " + saldoVitorias + " vitórias e está no nível " + nivel + ".")
 
 
 
